@@ -51,7 +51,7 @@ export default function Hero({ movie }: HeroProps) {
         <div className="absolute h-screen inset-0 bg-gradient-to-r from-black via-black/50 to-transparent" />
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 top-80 flex items-center px-4 sm:px-8 md:px-16">
+      <div className="absolute bottom-0 left-0 right-0 top-70 flex items-center px-4 sm:px-8 md:px-16">
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
             {movie.title}
@@ -59,7 +59,7 @@ export default function Hero({ movie }: HeroProps) {
           <p className="text-lg text-gray-200 mb-8 line-clamp-3">
             {movie.overview}
           </p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4" >
             <Link
               to={`/movie/${movie.id}`}
               className="flex items-center px-6 py-2 bg-white text-black rounded-md hover:bg-gray-200 transition-colors"
